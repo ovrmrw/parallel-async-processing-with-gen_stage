@@ -8,6 +8,14 @@ GenStageを使ってバックプレッシャーを効かせて並列数を制限
 mix deps.get
 ```
 
+## エラー回避のためだけのPostgres起動
+
+(本当はPhoenix関係ないんだけど。。。Elixirよくわからないまま試行錯誤していたので。。。すまぬ)
+
+```
+docker compose up
+```
+
 ## 実行
 
 ```

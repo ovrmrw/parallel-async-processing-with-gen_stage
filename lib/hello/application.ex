@@ -18,6 +18,7 @@ defmodule Hello.Application do
       # {Hello.Worker, arg},
       # Start to serve requests, typically the last entry
       HelloWeb.Endpoint,
+      {DynamicSupervisor, strategy: :one_for_one, name: Hello.DynamicSupervisor}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
